@@ -20,10 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!x4^m&_5z$k@9v7h#6l2o+qw8e1r3t9y0u1i2o3p4a5s6d7f8g'
+SECRET_KEY = 'django-insecure-%2r-3$z&8b*neg2%3z+891^*9u7t+=*&7s3))=6kj*f8vov^hm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
@@ -155,5 +155,7 @@ EMAIL_FILE_PATH = BASE_DIR / 'sent_emails'
 LOGIN_REDIRECT_URL = 'blog:index'
 
 MEDIA_ROOT = BASE_DIR / 'media'
+
+MEDIA_URL = '/media/'
 
 LOGIN_URL = 'login'
